@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:padding="8dp"
+    app:shape_radius="@dimen/dp_10"
+    app:shape_solidColor="@color/white"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/dialogTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:layout_height="180dp">
+
+       <com.hjq.shape.view.ShapeView
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:layout_width="@dimen/dp_60"
+           app:shape_strokeWidth="1dp"
+           app:shape_strokeColor="@color/common_line_color"
+           android:layout_height="@dimen/dp_40"
+           app:shape_radius="@dimen/dp_10"/>
+
+       <com.bonlala.widget.view.StringScrollPicker
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:id="@+id/sinalPicker"
+           android:layout_gravity="center"
+
+           app:spv_disallow_intercept_touch="true"
+           app:spv_max_text_size="20sp"
+           app:spv_min_text_size="16sp"
+           app:spv_alignment="center"
+           android:layout_width="80dp"
+           app:spv_visible_item_count="3"
+           android:layout_height="match_parent"/>
+
+       <TextView
+           android:id="@+id/dialogUnitTv"
+           android:visibility="gone"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:textSize="17sp"
+           android:text="km/h"
+           app:layout_constraintLeft_toRightOf="@+id/sinalPicker"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<LinearLayout
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/dialogCancelTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+
+    <com.hjq.shape.view.ShapeTextView
+        app:shape_radius="@dimen/dp_10"
+        android:id="@+id/dialogSureTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        app:shape_solidColor="@color/color_sure_btn_color"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+
+</LinearLayout>
+
+</com.hjq.shape.layout.ShapeLinearLayout>

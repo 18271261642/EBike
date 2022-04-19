@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/userHeartParentLayout"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg_shap"
+    android:layout_height="match_parent">
+
+    <com.hjq.bar.TitleBar
+        app:leftIcon="@drawable/icon_comm_white_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:titleColor="@color/white"
+        app:title="设置心率区间"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeartMaxLayout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FF1B82"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="最大心率"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:gravity="center|right"
+                android:text="200bpm"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart6Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FF453A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间6 极限无氧"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="&gt;180bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart5Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FFD60A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间5 力量强化"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="160bpm-170bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart4Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#30D158"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间4 心肺有氧"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="140bpm-159bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart3Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#0A84FF"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间3 燃脂耐力"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="120bpm-139bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg5"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart2Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#48484A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间2 热身恢复"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg6"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="100bpm-119bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg6"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/userHeart1Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#C7C7CC"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间1 静息"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintRight_toLeftOf="@id/tmpHtImg7"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="&lt;99bpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpHtImg7"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/userHeartNextImg"
+        android:layout_gravity="bottom|right"
+        android:layout_width="@dimen/dp_60"
+        android:layout_margin="20dp"
+        android:layout_height="@dimen/dp_60"
+        android:src="@mipmap/icon_gray_sure_img"/>
+
+</LinearLayout>

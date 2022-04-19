@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:padding="8dp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/doubleDialogTitleTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="标题"
+        android:textSize="20sp"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="wrap_content"
+       android:layout_gravity="center"
+       android:layout_height="180dp">
+
+
+       <LinearLayout
+           android:id="@+id/doubleDialogLayout"
+           app:layout_constraintLeft_toLeftOf="parent"
+           app:layout_constraintRight_toRightOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           android:layout_width="wrap_content"
+           android:layout_height="180dp"
+           android:gravity="center"
+           android:orientation="horizontal">
+
+
+           <com.bonlala.widget.view.StringScrollPicker
+               android:id="@+id/sinalPicker1"
+               android:layout_gravity="center"
+               app:spv_center_item_background="@color/common_line_color"
+               app:spv_disallow_intercept_touch="true"
+               app:spv_max_text_size="20sp"
+               app:spv_min_text_size="16sp"
+               app:spv_alignment="center"
+               android:layout_width="80dp"
+               app:spv_visible_item_count="3"
+               android:layout_height="match_parent"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="·"/>
+
+
+           <com.bonlala.widget.view.StringScrollPicker
+               android:id="@+id/sinalPicker2"
+               android:layout_gravity="center"
+               app:spv_center_item_background="@color/common_line_color"
+               app:spv_disallow_intercept_touch="true"
+               app:spv_max_text_size="20sp"
+               app:spv_min_text_size="16sp"
+               app:spv_alignment="center"
+               android:layout_width="80dp"
+               app:spv_visible_item_count="3"
+               android:layout_height="match_parent"/>
+
+
+       </LinearLayout>
+
+
+
+       <TextView
+           android:id="@+id/doubleDialogUnitTv"
+           android:visibility="visible"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintBottom_toBottomOf="parent"
+           android:textSize="17sp"
+           android:textColor="@color/black"
+           android:text="V"
+           app:layout_constraintLeft_toRightOf="@+id/doubleDialogLayout"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"/>
+
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+<LinearLayout
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/doubleDialogCancelTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="取消"/>
+
+    <TextView
+        android:id="@+id/doubleDialogSureTv"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_margin="10dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+
+        android:gravity="center"
+
+        android:layout_height="wrap_content"
+        android:text="确定"/>
+
+
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+        <com.bonlala.ebike.widget.XCollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_240"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/personalTopImgView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                app:srcCompat="@drawable/ic_user_top_bg" />
+
+ <!--           <androidx.appcompat.widget.Toolbar
+                android:id="@+id/tb_home_title"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                app:layout_collapseMode="pin">-->
+
+
+                <com.hjq.bar.TitleBar
+                    android:id="@+id/tv_home_title"
+                    app:leftIcon="@drawable/icon_comm_white_back"
+                    android:layout_width="match_parent"
+                    android:background="@color/transparent"
+                    app:titleColor="@color/white"
+                    app:title="个人信息"
+                    app:rightTitle="保存"
+                    app:rightTitleSize="18sp"
+                    app:rightTitleColor="#30D158"
+                    android:layout_height="wrap_content"/>
+
+
+
+        </com.bonlala.ebike.widget.XCollapsingToolbarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="-80dp"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content">
+
+            <View
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:background="@color/white"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@color/transparent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="-10dp"
+            android:layout_gravity="bottom">
+
+            <com.hjq.shape.layout.ShapeFrameLayout
+                android:background="@color/transparent"
+                app:shape_radius="20dp"
+                android:id="@+id/personalHdLayout"
+                android:layout_width="@dimen/dp_100"
+                android:padding="5dp"
+                android:layout_height="@dimen/dp_100"
+                android:layout_marginStart="20dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <ImageView
+                    android:id="@+id/personalImgView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/ic_launcher" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center|bottom"
+                    android:src="@drawable/ic_icon_personal_cam" />
+
+            </com.hjq.shape.layout.ShapeFrameLayout>
+
+
+            <TextView
+                android:id="@+id/personalUpBgTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/comm_green_btn_click"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="5dp"
+                android:text="修改背景"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:background="@color/white"
+        android:scrollbars="none"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1000dp"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:id="@+id/personalCountryLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="国家"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/personalCountryTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="国家"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="昵称"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.bonlala.widget.view.ClearEditText
+                    android:id="@+id/personalNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="AAAAA"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:id="@+id/personalSexLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="性别"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/personalSexTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="男"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg3"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:id="@+id/personalBirthLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="生日"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/personalBirthTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:id="@+id/personalHeightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="身高"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/personalHeightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="175cm"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg5"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:id="@+id/personalWeightLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="体重"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/personalWeightTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:padding="5dp"
+                    android:text="60kg"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/personalImg6"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/personalImg6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/ic_right_black_img"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+            <com.hjq.shape.layout.ShapeConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="8dp"
+                app:shape="rectangle"
+                app:shape_radius="10dp"
+                app:shape_strokeColor="#fff2f2f7"
+                app:shape_strokeWidth="1dp">
+
+
+                <TextView
+                    android:id="@+id/personalDescTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="简介"
+                    android:textColor="#2F2F33"
+                    android:textSize="18sp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/descNumberTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:text="0/200"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <com.bonlala.widget.view.ClearEditText
+                    android:id="@+id/personalDescContentTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@null"
+                    android:maxLength="200"
+                    android:gravity="top"
+                    android:hint="写下你想对世界说的话"
+                    app:layout_constraintTop_toBottomOf="@+id/personalDescTv" />
+
+
+            </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

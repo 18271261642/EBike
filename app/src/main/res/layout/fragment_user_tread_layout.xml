@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/treadParentLayout"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <com.hjq.bar.TitleBar
+        app:leftIcon="@drawable/icon_comm_white_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        app:titleColor="@color/white"
+        app:title="设置踏频率区间"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/serTread4Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FF453A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tmpTdTv1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间4 超高踏频"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/tmpTdTv1"
+                app:layout_constraintRight_toLeftOf="@id/tmpTdImg1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:inputType="text"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:gravity="center|right"
+                android:text="&gt;160rpm"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpTdImg1"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/serTread3Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FF9F0A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tmpTdTv2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间3 高踏频"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/tmpTdTv2"
+                app:layout_constraintRight_toLeftOf="@id/tmpTdImg2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="95rpm-159rpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpTdImg2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/serTread2Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#FFD60A"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tmpTdTv3"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间2 中踏频"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/tmpTdTv3"
+                app:layout_constraintRight_toLeftOf="@id/tmpTdImg3"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="80rpm-94rpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpTdImg3"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+        <com.hjq.shape.layout.ShapeConstraintLayout
+            android:id="@+id/serTread1Layout"
+            app:shape="rectangle"
+            app:shape_radius="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:shape_solidColor="#AC8E68"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/tmpTdTv4"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="区间1 低踏频"
+                android:textColor="#ffffffff"
+                android:textSize="16sp" />
+
+            <TextView
+                app:layout_constraintLeft_toRightOf="@id/tmpTdTv4"
+                app:layout_constraintRight_toLeftOf="@id/tmpTdImg4"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:text="&lt;79rpm"
+                android:layout_marginEnd="8dp"
+                android:maxLines="1"
+                android:layout_marginHorizontal="@dimen/dp_40"
+                android:background="@null"
+                android:gravity="center|right"
+                android:paddingLeft="8dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <ImageView
+                android:id="@+id/tmpTdImg4"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_gravity="right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_white_right_back"/>
+
+        </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/userTreadNextImg"
+        android:layout_gravity="bottom|right"
+        android:layout_width="@dimen/dp_60"
+        android:layout_margin="20dp"
+        android:layout_height="@dimen/dp_60"
+        android:src="@mipmap/icon_gray_sure_img"/>
+</LinearLayout>

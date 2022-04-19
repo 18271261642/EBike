@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="历史数据"
+        app:leftIcon="@drawable/ic_title_bar_black_back"/>
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="@color/color_black_txt_color"
+            android:textSize="@dimen/sp_18"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="@color/color_black_txt_color"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="@color/color_black_txt_color"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+        <TextView
+            android:textColor="@color/color_black_txt_color"
+            android:textSize="@dimen/sp_17"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="0.00"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="总里程(km)"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="总减碳(kg)"/>
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="总次数"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+
+            android:layout_height="wrap_content"
+            android:text="总时长"/>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/dp_10"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:orientation="horizontal">
+
+        <com.hjq.shape.view.ShapeTextView
+            app:shape_radius="@dimen/dp_12"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            app:shape_solidColor="@color/common_cancel_text_color"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:text="日"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white"/>
+
+        <com.hjq.shape.view.ShapeTextView
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            app:shape_radius="@dimen/dp_12"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            app:shape_solidColor="@color/common_cancel_text_color"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="周"
+
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white"/>
+
+        <com.hjq.shape.view.ShapeTextView
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            app:shape_radius="@dimen/dp_12"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            app:shape_solidColor="@color/common_cancel_text_color"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="月"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/white"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

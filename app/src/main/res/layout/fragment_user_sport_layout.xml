@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+    <com.hjq.bar.TitleBar
+        app:titleColor="#3A3A3C"
+        app:leftIcon="@drawable/ic_title_bar_black_back"
+        android:layout_width="match_parent"
+        app:titleSize="18sp"
+        android:layout_height="wrap_content"
+        app:title="运动信息"/>
+
+
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/userSportHeartLayout"
+        app:shape_solidColor="@color/white"
+        app:shape_solidPressedColor="@color/common_line_color"
+        app:shape_radius="20dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="心率区间"
+            android:textColor="#ff2f2f33"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <ImageView
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_black_img"/>
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/userSportPowerLayout"
+        app:shape_solidColor="@color/white"
+        app:shape_solidPressedColor="@color/common_line_color"
+        app:shape_radius="20dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="功率区间"
+            android:textColor="#ff2f2f33"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <ImageView
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_black_img"/>
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/userSportTreadLayout"
+        app:shape_solidColor="@color/white"
+        app:shape_solidPressedColor="@color/common_line_color"
+        app:shape_radius="20dp"
+        android:padding="8dp"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="踏频区间"
+            android:textColor="#ff2f2f33"
+            android:textSize="16sp"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+        <ImageView
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_right_black_img"/>
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+</LinearLayout>

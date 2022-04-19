@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hjq.bar.TitleBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftIcon="@drawable/ic_title_bar_black_back"
+        app:rightTitle="解绑"
+        app:rightTitleColor="#ff3a3a3c"
+        app:rightTitleSize="@dimen/sp_18"
+        app:title="码表设置"
+        app:titleColor="#ff3a3a3c"
+        app:titleSize="@dimen/sp_18" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetNameItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_right_img="false"
+                app:menu_title_txt="设备名称" />
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetUuidItem"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="UUID" />
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetOtaItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="固件升级" />
+
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetDialItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="表盘设置" />
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuBikeWheelItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="轮径设置" />
+
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuLimitSpeedItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="限速设置" />
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetBackLevelItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="背光强度" />
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetAutoPowerItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="自动关机" />
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuSetUnitItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="单位" />
+
+            <com.bonlala.ebike.ui.view.MenuItemVIew
+                android:id="@+id/menuHelpGearItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:menu_title_txt="助力档位设置" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commSetTv"/>
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

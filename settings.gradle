@@ -1,0 +1,22 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        // 阿里云云效仓库：https://maven.aliyun.com/mvn/guide
+        maven { url 'https://maven.aliyun.com/repository/public' }
+        maven { url 'https://maven.aliyun.com/repository/google' }
+        // 华为开源镜像：https://mirrors.huaweicloud.com/
+        maven { url 'https://repo.huaweicloud.com/repository/maven/' }
+        // JitPack 远程仓库：https://jitpack.io
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        google()
+        // noinspection JcenterRepositoryObsolete
+        jcenter()
+    }
+}
+rootProject.name = "EBike"
+include ':app'
+include ':thirdlibrary'
+include ':thirdlibrary:base'
+include ':thirdlibrary:widget'
+include ':blelibrary'

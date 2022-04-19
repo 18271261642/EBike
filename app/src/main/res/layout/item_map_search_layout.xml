@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/dp_5"
+    android:padding="8dp"
+    app:shape_radius="@dimen/dp_5"
+    app:shape_solidColor="@color/white"
+    app:shape_solidPressedColor="@color/common_line_color">
+
+
+    <ImageView
+        android:id="@+id/itemMapSearchImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@mipmap/ic_search_local_img"
+        app:layout_constraintBottom_toBottomOf="@+id/itemMapSearchNameTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/itemMapSearchNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="松岗公园"
+        android:textColor="#1C1C1E"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toRightOf="@id/itemMapSearchImgView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/itemMapSearchDescTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#ff1c1c1e"
+        android:textSize="12sp"
+        app:layout_constraintRight_toLeftOf="@id/itemMapSearchDistanceTv"
+        app:layout_constraintLeft_toLeftOf="@id/itemMapSearchNameTv"
+        app:layout_constraintTop_toBottomOf="@id/itemMapSearchNameTv" />
+
+
+    <ImageView
+        android:id="@+id/itemMapSearchRightImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:src="@mipmap/ic_item_search_navi_img"
+        app:layout_constraintBottom_toBottomOf="@id/itemMapSearchNameTv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemMapSearchDistanceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="526米"
+        android:textColor="#ff1c1c1e"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/itemMapSearchDescTv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemMapSearchRightImg" />
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

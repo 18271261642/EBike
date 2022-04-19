@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+
+
+    <ImageView
+        android:elevation="2dp"
+        android:id="@+id/dialogDfuImg"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="-30dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/ic_jump_top_img"/>
+
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/jumpContentLayout"
+        app:shape_solidColor="@color/white"
+        app:shape_radius="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:text="为了向您提供更好的数据服务请填写真实的个人信息"
+            android:textColor="#ffffffff"
+            android:textSize="18sp" />
+
+
+
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/jumpJumpTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="跳过"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/white"/>
+
+
+        <TextView
+            android:id="@+id/jumpContinueTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="完善信息"
+            android:background="@drawable/comm_green_btn_click"/>
+
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <declare-styleable name="FullscreenAttrs">
+        <attr name="fullscreenBackgroundColor" format="color" />
+        <attr name="fullscreenTextColor" format="color" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="CusMapCircleView">
+
+
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MenuItemVIew">
+        <attr name="menu_title_txt" format="string" />
+        <attr name="menu_right_txt" format="string" />
+        <attr name="menu_right_img" format="boolean" />
+        <attr name="menu_edit_show" format="boolean"/>
+
+    </declare-styleable>
+</resources>

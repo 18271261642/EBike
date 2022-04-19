@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/aboutTitleLayout"
+        app:leftIcon="@drawable/ic_title_bar_black_back"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:title="关于"
+        app:titleColor="#3A3A3C"
+        app:titleSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/aboutVersionLayout"
+        app:shape_strokeWidth="1dp"
+        app:shape_strokeColor="#fff2f2f7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/aboutTitleLayout"
+        app:shape_solidPressedColor="@color/common_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="#1C1C1E"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="版本:  v1.0"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="检查更新"
+            android:padding="5dp"
+            android:textColor="#ff1c1c1e"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintRight_toLeftOf="@id/aboutBackImg1" />
+
+
+        <ImageView
+            android:id="@+id/aboutBackImg1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_right_black_img"/>
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+
+    <com.hjq.shape.layout.ShapeConstraintLayout
+        android:id="@+id/aboutClearLayout"
+        app:shape_strokeWidth="1dp"
+        app:shape_strokeColor="#fff2f2f7"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/aboutVersionLayout"
+        app:shape_solidPressedColor="@color/common_line_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:id="@+id/aboutCacheTv"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:textColor="#1C1C1E"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="缓存:  0.35M"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清除缓存"
+            android:padding="5dp"
+            android:textColor="#ff1c1c1e"
+            android:textSize="16sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/aboutBackImg2" />
+
+
+        <ImageView
+            android:id="@+id/aboutBackImg2"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_right_black_img"/>
+
+
+    </com.hjq.shape.layout.ShapeConstraintLayout>
+
+
+
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/aboutLoginOutTv"
+        app:shape_strokeWidth="1dp"
+        app:shape_strokeColor="#fff2f2f7"
+        app:shape_solidPressedColor="@color/gray"
+        app:shape_radius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:text="退出登录"
+        android:gravity="center"
+        android:textColor="#ff30d158"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

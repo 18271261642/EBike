@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+    <com.hjq.bar.TitleBar
+        app:leftIcon="@drawable/ic_title_bar_black_back"
+        app:title="固件升级"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:id="@+id/otaOtaDescTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/dfuBatteryTv"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/dfuCurrVersionTv"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_gravity="center"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_height="wrap_content" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_shap"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/otaLastVersionTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:padding="3dp"
+                        android:text="最新版本:--"/>
+
+
+                    <TextView
+                        android:id="@+id/otaFileSizeTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:padding="3dp"
+                        android:text="安装包大小:--"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:padding="3dp"
+                        android:text="更新日志"/>
+
+                    <TextView
+                        android:id="@+id/otaRemarkTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:padding="3dp"
+                        android:text="--"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/white_shap"
+                    android:layout_margin="10dp"
+                    android:padding="8dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:padding="3dp"
+                        android:text="@string/device_upgrade_tips"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/dfuStartBtn"
+        android:background="@drawable/comm_green_btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/dp_10"
+        android:layout_margin="@dimen/dp_20"
+        android:textColor="@color/white"
+        android:text="下载"/>
+</LinearLayout>

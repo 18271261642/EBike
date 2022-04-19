@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:shape_strokeWidth="1dp"
+    app:shape_strokeColor="#F2F2F7"
+    android:layout_margin="@dimen/dp_10"
+    android:padding="@dimen/dp_8"
+    app:shape_radius="@dimen/dp_15"
+    app:shape_solidColor="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/itemSearchNameTv"
+        android:text="C097 DDDD"
+        android:textColor="#000000"
+        android:padding="5dp"
+        android:textSize="@dimen/sp_18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+
+
+   <com.hjq.shape.view.ShapeTextView
+       android:id="@+id/itemSearchBindTv"
+       app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:paddingLeft="@dimen/dp_15"
+       android:paddingRight="@dimen/dp_15"
+       android:paddingTop="@dimen/dp_5"
+       android:paddingBottom="@dimen/dp_5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginEnd="@dimen/dp_10"
+       android:text="连接"
+       android:textColor="@color/white"
+       app:shape_radius="@dimen/dp_15"
+       app:shape_solidColor="#30D158"/>
+
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

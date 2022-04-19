@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/homeDeviceImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/homeDeviceNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C078"
+        android:textColor="#ff1c1c1e"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@id/homeDeviceImgView"
+        app:layout_constraintRight_toRightOf="@id/homeDeviceImgView"
+        app:layout_constraintTop_toBottomOf="@id/homeDeviceImgView" />
+
+
+    <TextView
+        android:id="@+id/homeDeviceMacTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AS00671-20210608"
+        android:textColor="#ffc7c7cc"
+        android:textSize="16sp"
+        app:layout_constraintLeft_toLeftOf="@id/homeDeviceNameTv"
+        app:layout_constraintRight_toRightOf="@id/homeDeviceNameTv"
+        app:layout_constraintTop_toBottomOf="@id/homeDeviceNameTv" />
+
+
+    <ImageView
+        android:id="@+id/homeDeviceSetImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@drawable/ic_home_device_set"
+        app:layout_constraintBottom_toBottomOf="@+id/homeDeviceMacTv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeDeviceMacTv" />
+
+
+    <ImageView
+        android:id="@+id/homeDeviceNavigationImgView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        android:src="@drawable/ic_home_device_navite"
+        app:layout_constraintBottom_toBottomOf="@+id/homeDeviceMacTv"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeDeviceMacTv" />
+
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/homeDeviceImgView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/homeDeviceImgView"
+        app:layout_constraintTop_toTopOf="@id/homeDeviceImgView"
+        app:shape_radius="@dimen/dp_8"
+        app:shape_shadowColor="#F2F2F7"
+        app:shape_shadowSize="@dimen/dp_5"
+        app:shape_solidColor="@color/white">
+
+        <com.hjq.shape.layout.ShapeLinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            app:shape_radius="@dimen/dp_8"
+            app:shape_solidColor="#F2F2F2">
+
+
+            <com.hjq.shape.layout.ShapeFrameLayout
+                android:id="@+id/homeBleStatusLayout"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                app:shape="rectangle"
+                android:layout_gravity="center"
+                app:shape_radius="@dimen/dp_5"
+                app:shape_solidColor="#0A84FF">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_home_conn_be" />
+
+            </com.hjq.shape.layout.ShapeFrameLayout>
+
+
+            <TextView
+                android:id="@+id/homeLeftConnTxtTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="@dimen/dp_5"
+                android:paddingBottom="@dimen/dp_5"
+                android:text="NC"
+                android:textColor="#ffff453a"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </com.hjq.shape.layout.ShapeLinearLayout>
+
+
+        <com.hjq.shape.view.ShapeTextView
+            app:shape_radius="@dimen/dp_5"
+            android:id="@+id/homeDeviceConnTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="CONNECT"
+            android:textColor="@color/white"
+            app:shape_solidColor="#30D158" />
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_15"
+        app:layout_constraintBottom_toBottomOf="@id/homeDeviceImgView"
+        app:layout_constraintLeft_toRightOf="@id/homeDeviceImgView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/homeDeviceImgView"
+        app:shape_radius="@dimen/dp_8"
+
+        app:shape_shadowColor="#F2F2F7"
+        app:shape_shadowSize="@dimen/dp_5"
+        app:shape_solidColor="@color/white">
+
+        <com.bonlala.widget.view.CircleProgress
+            android:id="@+id/homeBatteryView"
+            android:layout_width="@dimen/dp_70"
+            android:layout_height="@dimen/dp_70"
+            app:arcWidth="10dp"
+            app:bgArcColor="#1a30d158"
+            app:bgArcWidth="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:unitColor="#30D158"
+            app:unitSize="20sp"
+            app:valueColor="#30D158"
+            app:valueSize="30sp" />
+
+
+        <com.hjq.shape.view.ShapeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="@dimen/dp_12"
+            android:gravity="center"
+            android:text="BATTERY"
+            android:textColor="#ff1c1c1e" />
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

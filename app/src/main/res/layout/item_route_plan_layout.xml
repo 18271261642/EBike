@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:padding="5dp"
+    android:layout_margin="5dp"
+    android:layout_height="match_parent"
+    app:shape_radius="@dimen/dp_10"
+    app:shape_solidColor="@color/white"
+    app:shape_strokeColor="#30D158"
+
+    app:shape_strokeWidth="1dp">
+
+
+    <TextView
+        android:id="@+id/itemRouteNameTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="3dp"
+        android:text="Route 1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/itemRouteDuringTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="5Min"
+        android:textSize="17sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemRouteNameTv" />
+
+    <TextView
+        android:id="@+id/itemRouteDistanceTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="3dp"
+        android:text="1.5km"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/itemRouteDuringTv" />
+
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

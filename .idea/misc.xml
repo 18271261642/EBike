@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Program Files/Java/jdk1.8.0_181/bin/caches/transforms-3/40d2eb27202958bd48898f7b21dcdb43/transformed/jetified-circleindicator-2.1.6/res/drawable/white_radius.xml" value="0.25729166666666664" />
+        <entry key="..\:/Program Files/Java/jdk1.8.0_181/bin/caches/transforms-3/5a5c865d73301aaaf2669422aaf6b6af/transformed/jetified-TitleBar-9.2/res/drawable-anydpi-v21/bar_arrows_left_black.xml" value="0.25729166666666664" />
+        <entry key="..\:/Program Files/Java/jdk1.8.0_181/bin/caches/transforms-3/eab88565de84afe6be815a1db4d0e830/transformed/jetified-onsdk_all/res/layout/nsdk_layout_hw_service_single_type_view.xml" value="0.1" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable-v24/bg_edittext.xml" value="0.1953125" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/arrows_left_ic.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/arrows_top_ic.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/bg_edittext.xml" value="0.20092592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/camera_ic.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/cc.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/checkbox_checked_ic.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/checkbox_disable_ic.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/comm_green_btn_click.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/comm_green_btn_click_normal.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/comm_green_btn_click_press.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/compound_normal_ic.xml" value="0.17552083333333332" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/dial_item_shap.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/dialog_input_bg.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/gray_circle_shap.xml" value="0.18333333333333332" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_home_home.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_icon_personal_cam.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_launcher_background.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_right_black_img.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_title_bar_black_back.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_white_right_back.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/ic_white_right_bg.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/image_error_ic.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/image_loading_ic.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/image_preview_indicator.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/level_shap.xml" value="0.2212962962962963" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/login_bg_shap.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/login_edit_shap.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/login_normal.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/login_phone_checked.xml" value="0.23148148148148148" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/login_third_shap.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/mine_top_shap.xml" value="0.23148148148148148" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/privacy_dialog_shap.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/radiobutton_disable_ic.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/radiobutton_selector.xml" value="0.17552083333333332" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/roll_accent_bg.xml" value="0.25729166666666664" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/shap_home_left_conn.xml" value="0.20555555555555555" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/status_empty_ic.xml" value="0.18958333333333333" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/status_error_ic.xml" value="0.22592592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/succeed_ic.xml" value="0.1935185185185185" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/transparent_selector.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/tt.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/video_brightness_high_ic.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/video_lock_open_ic.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/video_progress_bg.xml" value="0.24074074074074073" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/white_border_shap.xml" value="0.23148148148148148" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/white_circle_shap.xml" value="0.18333333333333332" />
+        <entry key="..\:/Works/EBike/app/src/main/res/drawable/white_shap.xml" value="0.20092592592592592" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activitiy_device_set_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_about_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_amap_preview_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_bd_navi_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_dfu_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_dial_manager_layout.xml" value="0.12545289855072464" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_fullscreen.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_history_data_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_home.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_home_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_login_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_map_route_plan_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_personal_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_privacy_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_search_device_layout.xml" value="0.13903985507246377" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_search_place_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_select_country_layout.xml" value="0.13632246376811594" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_show_log_layout.xml" value="0.12545289855072464" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_user_info_set_layout.xml" value="0.13632246376811594" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/activity_user_sport_layout.xml" value="0.11727456940222898" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/album_dialog.xml" value="0.11727456940222898" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/album_item.xml" value="0.215625" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/browser_activity.xml" value="0.1381340579710145" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/control_itemview.xml" value="0.13134057971014493" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/controlwindow.xml" value="0.13134057971014493" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/cus_amap_preview_layout.xml" value="0.536" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/cus_menu_item_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_date_select_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_double_layout.xml" value="0.1322463768115942" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_height_layout.xml" value="0.16799999999999998" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_jump_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_privacy_view.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_sex_select_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/dialog_sinal_layout.xml" value="0.24114583333333334" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_dashboard.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_home.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_basic_layout.xml" value="0.4" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_basic_over_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_heart_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_power_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_sport_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/fragment_user_tread_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/guidepopview.xml" value="0.13134057971014493" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/image_preview_activity.xml" value="0.11727456940222898" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/image_select_activity.xml" value="0.11727456940222898" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/image_select_item.xml" value="0.11548913043478261" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/input_dialog.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_cus_tv_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_dial_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_home_botton_layout.xml" value="0.4" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_home_device_conn_status_layout.xml" value="0.4" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_home_empty_layout.xml" value="0.15081521739130435" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_map_search_layout.xml" value="0.6" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_medal_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_route_plan_layout.xml" value="0.24114583333333334" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_search_device_layout.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/item_select_country_layout.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/message_dialog.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/picker_item.xml" value="0.2" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/show_privacy_dialog_view.xml" value="0.264" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/ui_dialog.xml" value="0.4" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/wait_dialog.xml" value="0.11727456940222898" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/widget_player_view.xml" value="0.24114583333333334" />
+        <entry key="..\:/Works/EBike/app/src/main/res/layout/widget_status_layout.xml" value="0.1490036231884058" />
+        <entry key="..\:/Works/EBike/app/src/main/res/menu/bottom_nav_menu.xml" value="0.21041666666666667" />
+        <entry key="..\:/Works/EBike/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24166666666666667" />
+        <entry key="..\:/Works/EBike/thirdlibrary/widget/src/main/res/drawable/input_delete_ic.xml" value="0.25729166666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.264" />
+      </ProjectState>
+    </option>
+  </component>
+</project>
